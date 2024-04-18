@@ -1,12 +1,11 @@
-
 # OPM.Net Extension
 
 [![build status](https://img.shields.io/badge/build-passed-blue.svg)](https://github.com/cyrillef/OPMNetExt/tree/master/OPMNetSample)
-[![ObjectARX](https://img.shields.io/badge/ObjectARX-2019-blue.svg)](http://usa.autodesk.com/adsk/servlet/index?siteID=123112&id=773204)
-[![AutoCAD](https://img.shields.io/badge/AutoCAD-2019-green.svg)](http://www.autodesk.com/developautocad)
+[![ObjectARX](https://img.shields.io/badge/ObjectARX-2025-blue.svg)](http://usa.autodesk.com/adsk/servlet/index?siteID=123112&id=773204)
+[![AutoCAD](https://img.shields.io/badge/AutoCAD-2025-green.svg)](http://www.autodesk.com/developautocad)
 ![Platforms](https://img.shields.io/badge/platform-windows-lightgray.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
-
+![NET8.0](https://img.shields.io/badge/.NET-8.0-blue.svg)
 
 ## Motivation
 
@@ -22,24 +21,30 @@ objects and commands to customize the display of properties in the property insp
 this is far from complete. This library looks at exposing more of the standard Properties Palette
 functionality to .NET languages.
 
-
 ## Description
-
-
 
 ## Dependencies
 
-* Visual Studio 2017
-* ObjectARX and AutoCAD from 2010 to 2019
+* Visual Studio 2022
+* ObjectARX 2025
+
+## Build Instructions
+
+```bash
+git clone https://github.com/cyrillef/OPMNetExt.git
+cd OPMNetExt
+set ArxSdk=D:\ArxSdks\Arx2025
+
+```
 
 
-## Setup/Usage Instructions
+
+## Further Reading
 
 Please read Kean Walmsley' blog articles on how to use the library.
 
 - [Exposing AutoCAD's Properties Palette functionality to .NET - Part 1](http://through-the-interface.typepad.com/through_the_interface/2009/03/exposing-autocads-properties-palette-functionality-to-net---part-1.html)
 - [Exposing AutoCAD's Properties Palette functionality to .NET - Part 2](http://through-the-interface.typepad.com/through_the_interface/2009/03/exposing-autocads-properties-palette-functionality-to-net---part-2.html)
-
 
 --------
 
@@ -47,7 +52,6 @@ Please read Kean Walmsley' blog articles on how to use the library.
 
 This sample is licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 Please see the [LICENSE](LICENSE) file for full details.
-
 
 ## Written by
 

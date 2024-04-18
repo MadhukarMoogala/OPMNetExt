@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <AcadDir>D:\ACAD\venn\AutoCAD 2025</AcadDir>
+    <ArxSdk>D:\ArxSDKs\arx2025</ArxSdk>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ArxSdk)\inc;$(ArxSdk)\inc-x64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>$(AcadDir)</AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ArxSdk)\Lib-x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ac1st25.lib;acad.lib;acapp.lib;acapp_crx.lib;AcCamera.lib;accore.lib;acdb25.lib;acdbmgd.lib;AcDbPointCloudObj.lib;AcDrawBridge.lib;AcFdEval.lib;AcFdUi.lib;acge25.lib;AcGeolocationObj.lib;acgeoment.lib;acgiapi.lib;acismobj25.lib;AcJsCoreStub_crx.lib;aclmvexport_crx.lib;acModelDocObj.lib;AcMPolygonObj.lib;AcPal.lib;AcPublish_crx.lib;AcSceneOE.lib;AcTc.lib;AcTcUi.lib;acui25.lib;AdApplicationFrame.lib;adui25.lib;aNav.lib;axdb.lib;rxapi.lib;userdata.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="AcadDir">
+      <Value>$(AcadDir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="ArxSdk">
+      <Value>$(ArxSdk)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
