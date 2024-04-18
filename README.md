@@ -34,10 +34,14 @@ functionality to .NET languages.
 git clone https://github.com/cyrillef/OPMNetExt.git
 cd OPMNetExt
 set ArxSdk=D:\ArxSdks\Arx2025
-
+msbuild /t:build /p:Configuration=Debug;Platform=x64 OPMNetExt.sln
 ```
 
+## Release Build
 
+```bash
+msbuild /t:build /p:Configuration=Release;Platform=x64 OPMNetExt.sln
+```
 
 ## Further Reading
 
